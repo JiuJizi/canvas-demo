@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>画板网页</title>
-    <link rel="stylesheet" href="./css/a.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的画板</title>
+    <link rel="stylesheet" href="css/a.css">
+    <script src="//at.alicdn.com/t/font_1039269_5dz9ikzasgv.js"></script>
 </head>
+
 <body>
-    <canvas class="canvas" id="canvas"></canvas>
-    <script src="./js/main.js"></script>
+    <canvas id="xxx"></canvas>
+    <div id=actions class="actions">
+        <svg class="active icon" id="pen">
+            <use xlink:href="#icon-pen"></use>
+        </svg>
+        <svg class="icon" id="eraser">
+            <use xlink:href="#icon-icon_eraser"></use>
+        </svg>
+        <svg class="icon" id="clear">
+            <use xlink:href="#icon-shuaxin"></use>
+        </svg>
+        <svg class="icon" id="download">
+            <use xlink:href="#icon-save"></use>
+        </svg>
+    </div>
+    <ol class="colors">
+        <li id="black" class="active black"></li>
+        <li id="red" class="red"></li>
+        <li id="green" class="green"></li>
+        <li id="blue" class="blue"></li>
+    </ol>
+    <ol class="sizes">
+        <li id="thin" class="thin"></li>
+        <li id="thick" class="thick"></li>
+    </ol>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
